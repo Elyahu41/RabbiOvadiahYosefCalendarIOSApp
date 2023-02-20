@@ -21,5 +21,11 @@
 			</array>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Do you want to allow the app to see your location to calculate the zmanim all the time?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Please allow the app to see your location to calculate the zmanim.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Do you want to allow the app to see your location to calculate the zmanim all the time?</string>
 </dict>
 </plist>

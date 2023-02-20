@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,14 @@
 		5D8AC08E29961A3700F90CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AC08C29961A3700F90CB7 /* Main.storyboard */; };
 		5D8AC09029961A3900F90CB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AC08F29961A3900F90CB7 /* Assets.xcassets */; };
 		5D8AC09329961A3900F90CB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8AC09129961A3900F90CB7 /* LaunchScreen.storyboard */; };
+		5D8AC09B29961AE700F90CB7 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AC09A29961AE700F90CB7 /* LocationManager.swift */; };
+		5D8AC09D29961AEF00F90CB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AC09C29961AEF00F90CB7 /* Constants.swift */; };
+		5D8AC09F29961AF500F90CB7 /* LSGeoLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8AC09E29961AF500F90CB7 /* LSGeoLookup.swift */; };
+		F37E22C6D9F29C6D744C0C53 /* Pods_Rabbi_Ovadiah_Yosef_Calendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67CAFFBDF3DB07DE771111C /* Pods_Rabbi_Ovadiah_Yosef_Calendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CC0D117DB9950A0EB215287 /* Pods-Rabbi Ovadiah Yosef Calendar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabbi Ovadiah Yosef Calendar.release.xcconfig"; path = "Target Support Files/Pods-Rabbi Ovadiah Yosef Calendar/Pods-Rabbi Ovadiah Yosef Calendar.release.xcconfig"; sourceTree = "<group>"; };
 		5D8AC08329961A3700F90CB7 /* Rabbi Ovadiah Yosef Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rabbi Ovadiah Yosef Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8AC08629961A3700F90CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D8AC08829961A3700F90CB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,12 @@
 		5D8AC08F29961A3900F90CB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D8AC09229961A3900F90CB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D8AC09429961A3900F90CB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8AC09A29961AE700F90CB7 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5D8AC09C29961AEF00F90CB7 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5D8AC09E29961AF500F90CB7 /* LSGeoLookup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSGeoLookup.swift; sourceTree = "<group>"; };
+		5D8AC0E5299CAA8F00F90CB7 /* KosherCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KosherCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F05B8FA6F683AAD0BE9426F /* Pods-Rabbi Ovadiah Yosef Calendar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rabbi Ovadiah Yosef Calendar.debug.xcconfig"; path = "Target Support Files/Pods-Rabbi Ovadiah Yosef Calendar/Pods-Rabbi Ovadiah Yosef Calendar.debug.xcconfig"; sourceTree = "<group>"; };
+		A67CAFFBDF3DB07DE771111C /* Pods_Rabbi_Ovadiah_Yosef_Calendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rabbi_Ovadiah_Yosef_Calendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +42,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37E22C6D9F29C6D744C0C53 /* Pods_Rabbi_Ovadiah_Yosef_Calendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17664A0394F86F1AB5385244 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F05B8FA6F683AAD0BE9426F /* Pods-Rabbi Ovadiah Yosef Calendar.debug.xcconfig */,
+				1CC0D117DB9950A0EB215287 /* Pods-Rabbi Ovadiah Yosef Calendar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4FCF9E835D9EB3D015C5AE5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D8AC0E5299CAA8F00F90CB7 /* KosherCocoa.framework */,
+				A67CAFFBDF3DB07DE771111C /* Pods_Rabbi_Ovadiah_Yosef_Calendar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D8AC07A29961A3700F90CB7 = {
 			isa = PBXGroup;
 			children = (
 				5D8AC08529961A3700F90CB7 /* Rabbi Ovadiah Yosef Calendar */,
 				5D8AC08429961A3700F90CB7 /* Products */,
+				17664A0394F86F1AB5385244 /* Pods */,
+				4FCF9E835D9EB3D015C5AE5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +91,9 @@
 				5D8AC08629961A3700F90CB7 /* AppDelegate.swift */,
 				5D8AC08829961A3700F90CB7 /* SceneDelegate.swift */,
 				5D8AC08A29961A3700F90CB7 /* ViewController.swift */,
+				5D8AC09A29961AE700F90CB7 /* LocationManager.swift */,
+				5D8AC09C29961AEF00F90CB7 /* Constants.swift */,
+				5D8AC09E29961AF500F90CB7 /* LSGeoLookup.swift */,
 				5D8AC08C29961A3700F90CB7 /* Main.storyboard */,
 				5D8AC08F29961A3900F90CB7 /* Assets.xcassets */,
 				5D8AC09129961A3900F90CB7 /* LaunchScreen.storyboard */,
@@ -74,9 +109,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D8AC09729961A3900F90CB7 /* Build configuration list for PBXNativeTarget "Rabbi Ovadiah Yosef Calendar" */;
 			buildPhases = (
+				4C9274C4A92D3731B4065278 /* [CP] Check Pods Manifest.lock */,
 				5D8AC07F29961A3700F90CB7 /* Sources */,
 				5D8AC08029961A3700F90CB7 /* Frameworks */,
 				5D8AC08129961A3700F90CB7 /* Resources */,
+				2CA2EC86D858A0F4750F9CF3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +140,7 @@
 				};
 			};
 			buildConfigurationList = 5D8AC07E29961A3700F90CB7 /* Build configuration list for PBXProject "Rabbi Ovadiah Yosef Calendar" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,13 +170,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CA2EC86D858A0F4750F9CF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rabbi Ovadiah Yosef Calendar/Pods-Rabbi Ovadiah Yosef Calendar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Rabbi Ovadiah Yosef Calendar/Pods-Rabbi Ovadiah Yosef Calendar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Rabbi Ovadiah Yosef Calendar/Pods-Rabbi Ovadiah Yosef Calendar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C9274C4A92D3731B4065278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Rabbi Ovadiah Yosef Calendar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D8AC07F29961A3700F90CB7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D8AC09D29961AEF00F90CB7 /* Constants.swift in Sources */,
+				5D8AC09B29961AE700F90CB7 /* LocationManager.swift in Sources */,
 				5D8AC08B29961A3700F90CB7 /* ViewController.swift in Sources */,
 				5D8AC08729961A3700F90CB7 /* AppDelegate.swift in Sources */,
+				5D8AC09F29961AF500F90CB7 /* LSGeoLookup.swift in Sources */,
 				5D8AC08929961A3700F90CB7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +352,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +364,7 @@
 		};
 		5D8AC09829961A3900F90CB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F05B8FA6F683AAD0BE9426F /* Pods-Rabbi Ovadiah Yosef Calendar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,11 +373,14 @@
 				DEVELOPMENT_TEAM = WWQ37G559J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rabbi Ovadiah Yosef Calendar/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rabbi Ovadiah Yosef Calendar";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +396,7 @@
 		};
 		5D8AC09929961A3900F90CB7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC0D117DB9950A0EB215287 /* Pods-Rabbi Ovadiah Yosef Calendar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,11 +405,14 @@
 				DEVELOPMENT_TEAM = WWQ37G559J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Rabbi Ovadiah Yosef Calendar/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Rabbi Ovadiah Yosef Calendar";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

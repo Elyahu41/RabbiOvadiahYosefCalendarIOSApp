@@ -1,0 +1,20 @@
+PODS:
+  - KosherCocoa (3.6.0)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - KosherCocoa (~> 3.6.0)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - KosherCocoa
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  KosherCocoa: 1085514386624c780bcad1b9c7c81135e36d1b55
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 4f616625b075ec6fe6296f801136c29e4a12835f
+
+COCOAPODS: 1.10.1
